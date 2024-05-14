@@ -15,7 +15,8 @@ module.exports = {
      header: "#403B36",
      text: "#595550",
      textbg: "#FFFDFA",
-     white: "#ffffff"
+     white: "#ffffff",
+     red: "#FF0505"
 
     },
     extend: {
