@@ -5,6 +5,7 @@ class NotesController < ApplicationController
 
   # GET /notes or /notes.json
   def index
+   
     @notes = Note.all.order("created_at DESC")
   end
 
