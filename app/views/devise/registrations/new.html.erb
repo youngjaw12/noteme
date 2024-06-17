@@ -1,0 +1,43 @@
+
+<div class="flex items-center justify-center ">
+
+<div class="">
+<div>
+<p class="font-extrabold lg:ml-40 ml-24  text-5xl tracking-tighter mb-24 lg:mb-20 lg:mt-16 mt-10">NoteMe</p>
+</div>
+
+<h2 class="text-3xl font-nunito font-bold tracking-wide text-text text-center mb-10  mt-5  mx-6">Join others to maximize your <br> productivity with little effort.</h2>
+
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="lg:ml-28 ml-10">
+   
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" , placeholder:"your email", class:" w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+  </div>
+
+  <div class="lg:ml-28 ml-10">
+    
+    <% if @minimum_password_length %>
+    
+    <% end %>
+    <%= f.password_field :password, autocomplete: "new-password" , placeholder:"new password (6 characters minimum)", class:" w-80 my-2 rounded-full bg-header/10 border-none  ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+  </div>
+
+  <div class="lg:ml-28 ml-10">
+    
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" , placeholder:"repeat password", class:" w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+  </div>
+
+  <div class="lg:ml-28 ml-10">
+    <%= f.submit "Create account" , class:" my-4 w-80 bg-buttoncolor p-2 text-white text-xl font-nunito font-light tracking-tight drop-shadow-lg rounded-md "  %>
+  </div>
+<% end %>
+<div class="lg:ml-28 ml-10">
+<p class="font-nunito tracking-tight font-light text-header/55">Have an account?</p>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>

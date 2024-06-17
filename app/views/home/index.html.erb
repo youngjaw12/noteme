@@ -1,0 +1,35 @@
+
+ <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+
+<div class="flex justify-between m-4">
+<div>
+<p class="font-extrabold tracking-tighter text-xl">NoteMe</p>
+</div>
+
+<div class="flex lg:gap-8 text-sm md:gap-8 gap-2 ">
+<p>Features</p>
+<p>Pricing</p>
+<p>About</p>
+<p class="p-2 bg-buttoncolor text-white font-extrabold ring-white ring-2 ">Free trial</p>
+
+</div>
+
+</div>
+
+<div class="grid justify-items-center  lg:m-8 lg:mt-36 mt-28">
+  <h1 class="font-bold lg:text-8xl md:text-6xl text-5xl lg:mx-6 my-4 tracking-tight font-nunito text-center">World's most robust note-taking app.</h1>
+  <p class="lg:text-xl font-nunito text-center mx-4 text-sm font-light">Simplify your life and write with so much ease! </p>
+</div>
+
+<div class="lg:flex justify-center gap-2 ">
+<div class="px-6 border-2 border-white tracking-tighter text-white font-black font-nunito p-2 bg-buttoncolor">
+Get started
+</div>
+
+<div class="px-6 tracking-tighter  border-buttoncolor border-2 bg-buttoncolor/30 font-black font-nunito p-2">
+<%=link_to ("account login "), new_user_session_path %>
+
+</div>
+</div>

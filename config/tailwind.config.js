@@ -16,7 +16,8 @@ module.exports = {
      text: "#595550",
      textbg: "#FFFDFA",
      white: "#ffffff",
-     red: "#FF0505"
+     red: "#FF0505",
+     blue: "#1d4ed8"
 
     },
     extend: {

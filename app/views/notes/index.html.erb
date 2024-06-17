@@ -16,6 +16,34 @@
        </svg>
   </div>
 
+
+
+<% if user_signed_in?%>
+
+   <div>
+    <%= button_to "sign out", destroy_user_session_path, method: :delete%> 
+
+  </div>
+
+   <div>
+    <%= link_to "edit profile", edit_user_registration_path%> 
+  
+  </div>
+
+<%else%>
+
+  <div>
+  <%= link_to "sign up", new_user_registration_path%> 
+  
+  </div>
+
+   <div>
+    <%= link_to "sign in", new_user_session_path%> 
+  
+  </div>
+
+  <%end%>
+
     <h1 class="font-bold text-xl drop-shadow-medium text-header font-nunito"> Recent Notes</h1>
 
     <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

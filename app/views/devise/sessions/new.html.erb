@@ -1,0 +1,41 @@
+
+
+
+
+<div class=" flex items-center justify-center">
+<div>
+<div>
+<p class="font-extrabold ml-20 text-5xl tracking-tighter mb-32 lg:mt-16 mt-10">NoteMe</p>
+</div>
+
+
+<h2 class="text-3xl font-nunito font-bold tracking-wide text-text text-center mt-5 mb-3 mx-6">Sign in </h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field ">
+ 
+    <%= f.email_field :email, autofocus: true, autocomplete: " email", placeholder:"your email", class:" my-4 w-80 rounded-full bg-header/10 border-none focu ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+  </div>
+
+  <div class="field">
+    
+    <%= f.password_field :password, autocomplete: "current-password" , placeholder:"current password", class:" mb-4 w-80 rounded-full bg-header/10 border-none focu ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class=" flex gap-2">
+      <%= f.check_box :remember_me, class:" rounded-md bg-header/10 border-none  ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+     <p class="font-nunito tracking-tight font-light text-black ">Remember me</p>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Sign in", class:" my-4 w-80 font-nunito font-light px-4 p-2 bg-buttoncolor text-xl tracking-tight drop-shadow-lg rounded-md text-white" %>
+  </div>
+<div class="font-nunito tracking-tight font-light text-header/55">Don't have an account?</div>
+
+<% end %>
+  
+<%= render "devise/shared/links" %>
+</div>
+</div>

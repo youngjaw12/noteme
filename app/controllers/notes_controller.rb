@@ -1,5 +1,7 @@
 class NotesController < ApplicationController
+  before_action :authenticate_user!, only: [:index]
   before_action :set_note, only: %i[ show edit update destroy ]
+  
 
   # GET /notes or /notes.json
   def index
