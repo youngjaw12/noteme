@@ -1,0 +1,17 @@
+<div class="flex mx-20 gap-8 mt-4 ">
+<div>
+<p class="font-extrabold tracking-tighter text-xl mr-10">NoteMe</p>
+</div>
+
+
+<div class="w-full ">
+<%= form_with url: "/search", method: :get do |form| %>
+ 
+  <%= form.text_field :query , class:"w-4/5 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2"%>
+  <%= form.submit "Search" , class:"bg-buttoncolor mx-2 p-1 px-4 text-white text-xl font-nunito font-light tracking-tight drop-shadow-lg rounded-md "%>
+<% end %>
+</div>
+
+<div>
+name
+</div>

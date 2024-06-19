@@ -1,21 +1,11 @@
-<div class="flex mx-20 gap-8 mt-4 ">
-<div>
-<p class="font-extrabold tracking-tighter text-xl mr-10">NoteMe</p>
-</div>
-
-
-<div class="w-full ">
-<%= form_with url: "/search", method: :get do |form| %>
- 
-  <%= form.text_field :query , class:"w-4/5"%>
-  <%= form.submit "Search" %>
-<% end %>
-</div>
-
-<div>
-name
-</div>
+<%= render "dashboardpartial/header" %>
   
 </div>
-<h1 class="font-bold text-4xl">Dashboard#index</h1>
-  <p>Find me in app/views/dashboard/index.html.erb</p>
+<hr class="mt-4">
+<!-- /> Thisis where the grid layout for dashboard begins <!-->
+<div class="grid grid-flow-col justify-stretch gap-1 mt-2">
+<div class="bg-buttoncolor">Features</div>
+<div class="bg-buttoncolor"> Recent</div>
+<div class="bg-buttoncolor">Objects</div>
+
+</div>
