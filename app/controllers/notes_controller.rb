@@ -1,12 +1,12 @@
 class NotesController < ApplicationController
-  before_action :authenticate_user!, only: [:index]
+  before_action :authenticate_user!, only: [:index, :new ]
   before_action :set_note, only: %i[ show edit update destroy ]
   
 
   # GET /notes or /notes.json
   def index
    
-    @notes = Note.all.order("created_at DESC")
+    @notes = Note.all
   end
 
   # GET /notes/1 or /notes/1.json

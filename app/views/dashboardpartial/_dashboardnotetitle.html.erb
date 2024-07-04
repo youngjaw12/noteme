@@ -1,0 +1,28 @@
+<div class=" bg-bgcolor rounded-2xl h-lvh pt-36 pl-36 ">
+ 
+
+<div class="mx-2 cursor-pointer ">
+<hr class="border-text/10 border">
+<% @notes.each do |note|%>
+<%=link_to note do%>
+<div  class="py-2 hover:bg-deskbg hover:font-bold flex justify-between ">
+
+<div class="flex gap-4 hover:font-bold">
+<div class="font-nunito  font-bold text-xl text-header "><%= note.title %></div>
+<div class="font-nunito  text-header "><%= note.content %></div>
+</div>
+<div class="font-light  font-nunito text-text/70 "> <%= note.created_at.strftime(" %H:%M, %d/%Y ") %></div>
+
+</div>
+<hr class=" border-text/10 border">
+<%end%>
+<%end%>
+</div>
+
+
+
+
+</div> 
+<div>
+
+

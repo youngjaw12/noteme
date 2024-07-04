@@ -1,11 +1,22 @@
-<%= render "dashboardpartial/header" %>
+<div>
+<%= render "dashboardpartial/header" , class:"w-full"%>
   
 </div>
-<hr class="mt-4">
-<!-- /> Thisis where the grid layout for dashboard begins <!-->
-<div class="grid grid-flow-col justify-stretch gap-1 mt-2">
-<div class="bg-buttoncolor">Features</div>
-<div class="bg-buttoncolor"> Recent</div>
-<div class="bg-buttoncolor">Objects</div>
+
+<!-- /> This is where the grid layout for dashboard begins <!-->
+<div class=" grid grid-cols-5 gap-1  mt-4 ">
+
+
+<div>
+<%= render ("dashboardpartial/dashboardside")%>
+</div>
+
+<!--/> second column <!-->
+
+
+<div class="col-span-4  mx-4">
+<%= render  "dashboardpartial/dashboardnotetitle", collection: @notes, as: :note%>
+</div>
 
 </div>
+
