@@ -1,6 +1,17 @@
 
 <div class="space-y-2">
+
+<div class="my-4 ml-4">
+<%= link_to new_note_path do%>
+<button class="p-4 px-12  flex gap-2 font-nunito bg-buttoncolor text-deskbg  font-bold rounded-2xl">
+<%= image_tag"Subtract.png", class:"size-5"%> Create
+</button>
+<%end%>
+</div>
+
+
 <div>
+<%= link_to dashboard_path do%>
 <div class="flex bg-bgcolor pl-8 hover:font-bold  hover:shadow-lg cursor-pointer hover:shadow-blue/30
 p-2 transition duration-700 ease-in-out rounded-full">
 <div>
@@ -13,9 +24,11 @@ p-2 transition duration-700 ease-in-out rounded-full">
 <div class="font-nunito text-header mx-4   ">All work</div>
 <div class="ml-14 font-nunito text-header  ">23</div>
 </div>
+<%end%>
 </div>
 
 <div>
+<%= link_to notes_path do%>
 <div class="flex bg-bgcolor pl-8 hover:font-bold  hover:shadow-lg cursor-pointer hover:shadow-blue/30
 p-2 transition duration-700 ease-in-out rounded-full">
 <div>
@@ -28,5 +41,7 @@ p-2 transition duration-700 ease-in-out rounded-full">
 <div class="font-nunito text-header mx-4   ">Note</div>
 <div class="ml-14 font-nunito text-header  ">14</div>
 </div>
+
+<%end%>
 </div>
 </div>
