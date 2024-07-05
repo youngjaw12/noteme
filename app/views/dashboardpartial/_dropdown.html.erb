@@ -1,12 +1,16 @@
-<div data-controller="dropdown" class="relative mr-8 w-16">
+<div data-controller="dropdown" class="relative mr-8">
   <button data-action="click->dropdown#toggle" class="bg-blue-500 text-header font-semibold py-2 px-2 rounded">
-    Menu
+    <%= image_tag"more.png"%>
   </button>
-  <div data-dropdown-target="menu" class="hidden absolute shadow-deskbg drop-shadow right-0  w-40 bg-bgcolor shadow p-4  rounded-2xl  mt-2 ">
-    <ul class="pl-8 space-y-2 ">
-      <li ><%= link_to "Edit profile", edit_user_registration_path, class:"flex" %></li>
+  <div data-dropdown-target="menu" class="hidden absolute  shadow-deskbg drop-shadow right-0   bg-bgcolor shadow p-2  rounded-2xl  mt-2 ">
+    <ul class="ml-8 space-y-2 w-40 font-nunito text-header ">
+      <li class="flex gap-2"> <%= image_tag "premium.png", class:"size-6"%> <%= link_to "Buy Premium", edit_user_registration_path, class:"flex" %></li>
+      <li class="flex gap-2"><%= image_tag "editt.png", class:"size-6"%><%= link_to "Edit profile", edit_user_registration_path, class:"flex" %></li>
+      <li class="flex gap-2"><%= image_tag "theme.png", class:"size-6"%><%= link_to "App Theme", edit_user_registration_path, class:"flex" %></li>
+      <li class="flex gap-2"><%= image_tag "notification.png", class:"size-6"%><%= link_to "Notifications", edit_user_registration_path, class:"flex" %></li>
+      <li class="flex gap-2"><%= image_tag "security.png", class:"size-6"%><%= link_to "Security", edit_user_registration_path, class:"flex" %></li>
       
-      <li><%= button_to "sign out", destroy_user_session_path, method: :delete%></li>
+      <li class="flex gap-2"><%= image_tag "logout.png", class:"size-6"%><%= button_to "Log out", destroy_user_session_path, method: :delete%></li>
     </ul>
   </div>
 </div>

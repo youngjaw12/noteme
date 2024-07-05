@@ -38,14 +38,15 @@
 
 <% if user_signed_in?%>
 
-<div class=" gap-2 ">
+<div class=" gap-2 flex ">
 <p class="font-nunito font-light text-header">Welcome </p>
 <div class="font-nunito font-bold text-header"><%= current_user.name%></div>
-</div>
-
 <div >
 <%= render "dashboardpartial/dropdown" %>
 </div>
+
+</div>
+
 
 
 <%else%>
