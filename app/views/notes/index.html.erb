@@ -1,7 +1,15 @@
 
-
+<div class="hidden lg:block">
 <%=render "dashboardpartial/header"%>
+</div>
 
+<div class="lg:hidden ">
+<%= render "mobile/header"%>
+</div>
+
+<div class="lg:hidden">
+<%= render "mobile/noteindex"%>
+</div>
 
 <div class="w-full">
   <% if notice.present? %>
@@ -14,12 +22,12 @@
 
   <div class="grid grid-cols-5 gap-1  mt-4">
 
-<div>
+<div class="hidden lg:block">
 <%= render "dashboardpartial/dashboardside"%>
 </div>
   
 
-<div class="col-span-4 mx-4">
+<div class="hidden lg:block col-span-4 mx-4">
 <%= render "notes/notepartial/noteindex"%>
 </div>
 </div>

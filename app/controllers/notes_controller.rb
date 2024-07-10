@@ -8,8 +8,10 @@ class NotesController < ApplicationController
   # GET /notes or /notes.json
   def index
     @notes = Note.order ("created_at DESC")
-    
+ 
   end
+    
+  
 
   # GET /notes/1 or /notes/1.json
   def show
