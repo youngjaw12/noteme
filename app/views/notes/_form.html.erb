@@ -16,11 +16,16 @@
 <%= form.text_field :title , placeholder:"title", class:"w-full my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2"%>
 </div>
 
+
+
   <div class="my-4 row-8">
     
     <%= form.rich_text_area :content, class:"row-4" %>
   </div>
   
+<div>
+<%= form.number_field :user_id, id: :note_user_id,  value: current_user.id, type: :hidden%>
+</div>
 
   <div class="inline">
     <%= form.submit "Save note", class: "  w-full font-nunito rounded-lg py-3 px-5 bg-buttoncolor text-white inline-block font-medium cursor-pointer" %>
