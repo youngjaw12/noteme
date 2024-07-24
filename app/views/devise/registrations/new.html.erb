@@ -1,25 +1,26 @@
 
-<div class="flex items-center justify-center ">
+<div class="flex items-center justify-center lg:ml-80 ">
 
-<div class="">
+<div >
 <div>
-<p class="font-extrabold lg:ml-40 ml-24  text-5xl tracking-tighter mb-24 lg:mb-20 lg:mt-16 mt-10">NoteMe</p>
+<p class="font-extrabold lg:ml-48 ml-24  lg:text-7xl text-5xl tracking-tighter mb-6 lg:mt-16 mt-36">NoteMe</p>
 </div>
 
-<h2 class="text-3xl font-nunito font-bold tracking-wide text-text text-center mb-10  mt-5  mx-6">Join others to maximize your <br> productivity with little effort.</h2>
-
+<div class=" lg:w-2/3 lg:ml-16">
+<h2 class="text-3xl lg:text-4xl  font-nunito  tracking-wide text-header text-center mb-10 mx-2">Note-taking with little effort.  More productivity.</h2>
+</div>
 
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
 <div class="lg:ml-28 ml-10">
-<%= f.text_field  :name, autofocus: true, autocomplete: "name", placeholder:"name", class:"w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2"%>
+<%= f.text_field  :name, autofocus: true, autocomplete: "name", placeholder:"full name", class:"lg:w-3/5 w-80 lg:text-xl caret-text focus:caret-text drop-shadow-md font-nunito mt-4 mb-2 py-3  rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2"%>
 </div>
 
   <div class="lg:ml-28 ml-10">
    
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" , placeholder:"your email", class:" w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" , placeholder:"your email", class:" lg:w-3/5 lg:text-xl w-80 caret-text focus:caret-text mt-2 drop-shadow-md mb-2 py-3 font-nunito  rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2" %>
   </div>
 
   <div class="lg:ml-28 ml-10">
@@ -27,16 +28,16 @@
     <% if @minimum_password_length %>
     
     <% end %>
-    <%= f.password_field :password, autocomplete: "new-password" , placeholder:"new password (6 characters minimum)", class:" w-80 my-2 rounded-full bg-header/10 border-none  ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+    <%= f.password_field :password, autocomplete: "new-password" , placeholder:"new password (6 characters minimum)", class:" lg:text-xl lg:w-3/5 w-80 caret-text drop-shadow-md focus:caret-text my-2 py-3  font-nunito  rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2" %>
   </div>
 
   <div class="lg:ml-28 ml-10">
     
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" , placeholder:"repeat password", class:" w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" , placeholder:"repeat password", class:" lg:text-xl lg:w-3/5 w-80 caret-text focus:caret-text drop-shadow-md  mb-4 mt-2 py-3  font-nunito  rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2" %>
   </div>
 
   <div class="lg:ml-28 ml-10">
-    <%= f.submit "Create account" , class:" my-4 w-80 bg-buttoncolor p-2 text-white text-xl font-nunito font-light tracking-tight drop-shadow-lg rounded-md "  %>
+    <%= f.submit "Create account" , class:" lg:w-3/5 cursor-pointer my-4 w-80 bg-buttoncolor p-3 text-white text-xl font-nunito font-light tracking-tight drop-shadow-lg rounded-md "  %>
   </div>
 <% end %>
 <div class="lg:ml-28 ml-10">

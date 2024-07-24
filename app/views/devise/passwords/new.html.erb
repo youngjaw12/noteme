@@ -6,16 +6,16 @@
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="ml-8">
+  <div class=" my-2">
     
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"enter your email", class:" w-80 my-4 rounded-full bg-header/10 border-none ring-2 ring-header/50 focus:ring-header/50 focus:ring-2" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"enter your email", class:" lg:w-96 lg:text-xl w-80 caret-text focus:caret-text mt-2 drop-shadow-md mb-2 py-3 font-nunito  rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2" %>
   </div>
 
-  <div class="ml-8">
-    <%= f.submit "Send me reset link" , class:"w-80 font-nunito font-light px-4 p-2 bg-buttoncolor text-xl tracking-tight drop-shadow-lg rounded-md text-white"%>
+  <div class=" mt-4">
+    <%= f.submit "Send me reset link" , class:"lg:w-96 w-80 cursor-pointer font-nunito font-light px-4 p-3 bg-buttoncolor text-xl tracking-tight drop-shadow-lg rounded-md text-white"%>
   </div>
 <% end %>
-<div class="ml-8">
+<div >
 <%= render "devise/shared/links" %>
 </div>
 </div>
