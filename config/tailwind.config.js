@@ -15,7 +15,7 @@ module.exports = {
      header: "#403B36",
      text: "#595550",
      textbg: "#FFFDFA",
-     white: "#ffffff",
+     white: "#F3FBFB",
      red: "#FF0505",
      blue: "#1d4ed8",
      deskbg: "#F2E5D5",

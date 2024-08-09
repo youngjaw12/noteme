@@ -3,7 +3,7 @@
     <%= image_tag"more.png"%>
   </button>
   <div data-dropdown-target="menu" class="hidden absolute  shadow-deskbg drop-shadow right-0   bg-bgcolor shadow p-2  rounded-2xl  mt-2 ">
-    <ul class="ml-8 space-y-2 w-40 font-nunito text-header ">
+    <ul class="mr-8 space-y-2 w-40 font-nunito text-header ">
       <li class="flex gap-2"> <%= image_tag "premium.png", class:"size-6"%> <%= link_to "Buy Premium", edit_user_registration_path, class:"flex" %></li>
       <li class="flex gap-2"><%= image_tag "editt.png", class:"size-6"%><%= link_to "Edit profile", edit_user_registration_path, class:"flex" %></li>
       <li class="flex gap-2"><%= image_tag "theme.png", class:"size-6"%><%= link_to "App Theme", edit_user_registration_path, class:"flex" %></li>
@@ -13,4 +13,4 @@
       <li class="flex gap-2"><%= image_tag "logout.png", class:"size-6"%><%= button_to "Log out", destroy_user_session_path, method: :delete%></li>
     </ul>
   </div>
-</div>
+</div>f

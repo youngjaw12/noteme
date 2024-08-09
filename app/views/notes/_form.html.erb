@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+  
 
 <div>
 <%= form.text_field :title , placeholder:"title", class:"w-full caret-text focus:caret-text  font-nunito w-96 rounded-2xl bg-bgcolor border-none ring-0 ring-deskbg focus:ring-buttoncolor/10 focus:ring-2"%>
@@ -18,9 +18,9 @@
 
 
 
-  <div class="my-4 row-8">
+  <div class="my-4 ">
     
-    <%= form.rich_text_area :content, class:"row-4" %>
+    <%= form.rich_text_area :content, class: "trix-content shadow appearance-none border rounded h-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  %>
   </div>
   
 <div>
@@ -35,3 +35,5 @@
 
 
 
+
+        

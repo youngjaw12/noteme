@@ -1,9 +1,9 @@
 trix-editor {
-  border: 1px solid #bbb;
+  border: none;
   border-radius: 3px;
   margin: 0;
   padding: 0.4em 0.6em;
-  min-height: 5em;
+  min-height: 25em;
   outline: none; }
 
 trix-toolbar * {
@@ -18,9 +18,8 @@ trix-toolbar .trix-button-row {
 trix-toolbar .trix-button-group {
   display: flex;
   margin-bottom: 10px;
-  border: 1px solid #bbb;
-  border-top-color: #ccc;
-  border-bottom-color: #888;
+  
+ 
   border-radius: 3px; }
   trix-toolbar .trix-button-group:not(:first-child) {
     margin-left: 1.5vw; }
